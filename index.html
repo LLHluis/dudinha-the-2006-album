@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b8d9ee">
+
+    <title>Dudinha — The 2006 Album</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="album-container">
+
+        <!-- DESENHOS DAS FLORES (usados na página secreta) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <ellipse id="pt" cx="0" cy="-17" rx="5.6" ry="12.5"/>
+        <path id="sp" d="M0-11C6-18 5-25 0-29C-5-25-6-18 0-11Z"/>
+    </defs>
+
+    <symbol id="daisy" viewBox="-30 -30 60 60">
+        <g fill="#fff" stroke="#e6dac4" stroke-width=".7">
+            <use href="#pt"/><use href="#pt" transform="rotate(30)"/><use href="#pt" transform="rotate(60)"/>
+            <use href="#pt" transform="rotate(90)"/><use href="#pt" transform="rotate(120)"/><use href="#pt" transform="rotate(150)"/>
+            <use href="#pt" transform="rotate(180)"/><use href="#pt" transform="rotate(210)"/><use href="#pt" transform="rotate(240)"/>
+            <use href="#pt" transform="rotate(270)"/><use href="#pt" transform="rotate(300)"/><use href="#pt" transform="rotate(330)"/>
+        </g>
+        <circle r="8.5" fill="#ffd45e" stroke="#e8a92c" stroke-width="1.2"/>
+    </symbol>
+
+    <symbol id="sunflower" viewBox="-32 -32 64 64">
+        <g fill="#f7b928" stroke="#d98e0b" stroke-width=".6">
+            <use href="#sp"/><use href="#sp" transform="rotate(22.5)"/><use href="#sp" transform="rotate(45)"/><use href="#sp" transform="rotate(67.5)"/>
+            <use href="#sp" transform="rotate(90)"/><use href="#sp" transform="rotate(112.5)"/><use href="#sp" transform="rotate(135)"/><use href="#sp" transform="rotate(157.5)"/>
+            <use href="#sp" transform="rotate(180)"/><use href="#sp" transform="rotate(202.5)"/><use href="#sp" transform="rotate(225)"/><use href="#sp" transform="rotate(247.5)"/>
+            <use href="#sp" transform="rotate(270)"/><use href="#sp" transform="rotate(292.5)"/><use href="#sp" transform="rotate(315)"/><use href="#sp" transform="rotate(337.5)"/>
+        </g>
+        <circle r="13" fill="#6b4423"/>
+        <circle r="9" fill="none" stroke="#a8743a" stroke-width="1.4" stroke-dasharray="1.6 2.2"/>
+        <circle r="4.5" fill="none" stroke="#a8743a" stroke-width="1.2" stroke-dasharray="1.4 2"/>
+    </symbol>
+
+    <symbol id="tulip" viewBox="0 0 40 52">
+        <path d="M20 4C12 10 6 18 8 30C10 38 16 42 20 42C24 42 30 38 32 30C34 18 28 10 20 4Z" fill="currentColor"/>
+        <path d="M20 4C16 14 14 24 20 42C26 24 24 14 20 4Z" fill="#fff" fill-opacity=".28"/>
+        <path d="M8 30C7 22 11 14 20 4C14 14 12 24 20 42C14 40 9 36 8 30Z" fill="#000" fill-opacity=".08"/>
+    </symbol>
+</svg>
+
+        <!-- CAPA DO ÁLBUM -->
+
+        <section class="album-cover" id="cover">
+
+            <header class="cover-header">
+                <span>SPECIAL EDITION · 2006</span>
+                <span>19 NOVEMBER</span>
+            </header>
+
+            <div class="cover-photo-area">
+
+                <div class="polaroid polaroid-small">
+                    <img src="assets/photos/dudinha-polaroid.jpg" alt="Foto da Dudinha">
+                    <span>little moments ♡</span>
+                </div>
+
+                <div class="main-photo">
+                    <img src="assets/photos/dudinha-capa.jpg" alt="Retrato principal da Dudinha">
+                </div>
+
+                <span class="decoration flower">✿</span>
+                <span class="decoration star">✦</span>
+                <span class="decoration star-two">✧</span>
+
+            </div>
+
+            <div class="album-title">
+
+                <p class="edition">THE SPECIAL BIRTHDAY EDITION</p>
+
+                <h1>DUDINHA</h1>
+
+                <h2>THE 2006 ALBUM</h2>
+
+                <p class="subtitle">
+                    A collection of memories, moments and little things.
+                </p>
+
+            </div>
+
+            <button class="play-button" id="openAlbum">
+                <span>▶</span>
+                PLAY ALBUM
+            </button>
+
+            <footer class="cover-footer">
+                <span>✦ 1989 INSPIRED ✦</span>
+                <span>MADE WITH LOVE</span>
+            </footer>
+
+        </section>
+
+
+        <!-- TRACKLIST -->
+
+        <section class="tracklist hidden" id="tracklist">
+
+            <p class="tracklist-label">DUDINHA · THE 2006 ALBUM</p>
+
+            <h2>Tracklist</h2>
+
+            <p class="tracklist-description">
+                Four little chapters, made just for you.
+            </p>
+
+            <div class="tracks">
+
+                <button class="track" data-page="page2">
+                    <span>01</span>
+                    <span>The Life of a Showgirl</span>
+                    <span>✦</span>
+                </button>
+
+                <button class="track" data-page="page1">
+                    <span>02</span>
+                    <span>Duda's Version</span>
+                    <span>✦</span>
+                </button>
+
+                <button class="track" data-page="page3">
+                    <span>03</span>
+                    <span>A Little Bit of Magic</span>
+                    <span>✦</span>
+                </button>
+
+                <button class="track" data-page="page4">
+                    <span>04</span>
+                    <span>The Other Side of the Door</span>
+                    <span>✦</span>
+                </button>
+
+            </div>
+
+            <button class="back-button" id="backToCover">
+                ← BACK TO COVER
+            </button>
+
+        </section>
+
+
+        <<!-- PÁGINA 1 - DUDA'S VERSION · CADERNO ABERTO -->
+<section class="album-page scrapbook-page hidden" id="page1">
+
+  <div class="sb-notebook">
+
+    <div class="sb-spiral" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- ============ FOLHA ESQUERDA ============ -->
+    <div class="sb-sheet sb-l">
+      <div class="sb-in"></div>
+
+      <header class="sb-head">
+        <p class="page-number">CHAPTER 02 · SIDE A</p>
+        <p class="sb-date">NOVEMBER 19 ✿</p>
+      </header>
+
+      <div class="sb-title">
+        <h2>Duda's Version</h2>
+        <p class="page-subtitle">Every version of you is worth celebrating.</p>
+      </div>
+
+      <figure class="sb-i sb-pol tp" style="--x:6%;--y:19%;--w:40cqw;--r:-6deg;--z:3">
+        <img src="assets/photos/dudamao.jpeg" alt="Fotografia da Dudinha">
+        <small>sou fã dessa☝️ ♡</small>
+      </figure>
+
+      <div class="sb-i sb-note clip" style="--x:50%;--y:20.5%;--w:42cqw;--r:4deg">
+        <b>para lembrar</b>
+        <p>Algumas pessoas tornam a vida mais especial simplesmente por fazerem parte dela.</p>
+      </div>
+      <div class="sb-i sb-washi" style="--x:58%;--y:18.5%;--w:30cqw;--r:3deg;--z:5">Pequenas coisas, Grandes memorias</div>
+
+      <div class="sb-i sb-paper" style="--x:55%;--y:41%;--w:24cqw;--r:-5deg;--z:3">
+        <strong>1989</strong>
+        <p>daydreams, blue skies &amp; memories.</p>
+      </div>
+
+      <div class="sb-i sb-film" style="--x:5%;--y:60%;--w:48cqw;--r:-3deg;--z:4">
+        <img src="assets/photos/foto duda show.jpeg" alt="" style="--op:center 20%">
+        <img src="assets/photos/foto taylor roupa preta.jpg" alt="" style="--op:center 35%">
+        <img src="assets/photos/foto duda show.jpeg" alt="" style="--op:center 70%">
+        <i>MEMORIES IN MOTION</i>
+      </div>
+
+      <div class="sb-i sb-note sb-grid tp" style="--x:49%;--y:61%;--w:44cqw;--r:3deg;--bg:#fff8df;--tape:rgba(222,174,183,.75);--tr:4deg">
+        <b>checklist · dia perfeito</b>
+        <ul class="sb-check">
+          <li>ouvir vc falando um montao de coisas</li>
+          <li>ter sua presença</li>
+          <li>seu olhar</li>
+          <li>qualquer dia com vc</li>
+        </ul>
+      </div>
+
+      <div class="sb-i sb-ransom" style="--x:6%;--y:76%;--r:-3deg;--z:4">
+        <span>D</span><span>U</span><span>D</span><span>A</span>
+      </div>
+
+      <div class="sb-i sb-stamp" style="--x:57%;--y:80%;--r:-10deg;--z:5">BIRTHDAY<br>GIRL ✿</div>
+
+      <span class="sb-i sb-h" style="--x:38%;--y:33%;--r:-8deg;--c:#718da2">look! ↷</span>
+      <span class="sb-i sb-h" style="--x:40%;--y:57%;--r:-9deg;--c:#b17d91;--z:6">so lovely!</span>
+      <span class="sb-i sb-h" style="--x:10%;--y:90%;--r:-4deg;--c:#718da2">keep this ♡</span>
+      <span class="sb-i sb-h" style="--x:70%;--y:90%;--r:5deg;--c:#b17d91;--fs:26px">〰 ♡</span>
+
+      <span class="sb-i sb-st" style="--x:86%;--y:3%;--c:#c19a65">✦</span>
+      <span class="sb-i sb-st" style="--x:4%;--y:11%;--c:#b77e91">♡</span>
+      <span class="sb-i sb-st" style="--x:41%;--y:44%;--c:#b77e91">✿</span>
+      <span class="sb-i sb-st" style="--x:88%;--y:58%;--c:#c19a65">★</span>
+      <span class="sb-i sb-st" style="--x:3%;--y:57%;--c:#9bb5c5">✧</span>
+      <span class="sb-i sb-st" style="--x:31%;--y:74%;--c:#c28b9a">✿</span>
+
+      <footer class="sb-foot">
+        <span>✿ A PAGE FULL OF LITTLE MEMORIES</span><span>02 / 04</span>
+      </footer>
+    </div>
+
+    <!-- ============ FOLHA DIREITA ============ -->
+    <div class="sb-sheet sb-r">
+      <div class="sb-in"></div>
+
+      <header class="sb-head">
+        <p class="page-number">SIDE B · KEEP GOING</p>
+        <p class="sb-date">19.11 ✿</p>
+      </header>
+
+      <div class="sb-i sb-note sb-torn" style="--x:7%;--y:9%;--w:52cqw;--r:-2deg;--z:3">
+        <b>anotaçao para vc</b>
+        <p>que esse dia seja tao especial quanto vc é.</p>
+        <em>Com amor, sempre♡</em>
+      </div>
+
+      <figure class="sb-i sb-pol tp" style="--x:57%;--y:6%;--w:37cqw;--r:6deg;--z:2;--tape:rgba(222,174,183,.7);--tr:6deg">
+        <img src="assets/photos/duda oculos vermelha.jpeg" alt="Outra fotografia da Dudinha" style="--op:center 30%">
+        <small>the girl of the year</small>
+      </figure>
+
+      <div class="sb-i sb-cal" style="--x:8%;--y:34%;--w:25cqw;--r:-5deg;--z:3">
+        <span>NOVEMBER</span><strong>19</strong><em>her special day</em>
+      </div>
+
+      <div class="sb-i sb-booth tp" style="--x:37%;--y:38%;--w:17cqw;--r:3deg;--z:4">
+        <img src="assets/photos/taylor maozinhas.jpg" alt="" style="--op:center 15%">
+        <img src="assets/photos/foto duda show.jpeg" alt="" style="--op:center 25%">
+        <img src="assets/photos/taylor maozinhas.jpg" alt="" style="--op:center 80%">
+      </div>
+
+      <div class="sb-i sb-receipt" style="--x:61%;--y:44%;--w:31cqw;--r:4deg;--z:3">
+        <p class="sb-rc-t">★ RECEIPT ★</p>
+        <p>∞ abraços</p><p>∞ memórias</p><p>1x vinculo</p>
+        <p class="sb-rc-b">TOTAL: ♡</p>
+      </div>
+
+      <div class="sb-i sb-ticket" style="--x:6%;--y:55%;--w:40cqw;--r:-4deg;--z:3">
+        <small>ENTRADA PARA </small><strong>UMA PESSOA</strong><small>SPECIAL MEMORIES · 2006</small>
+      </div>
+
+      <div class="sb-i sb-tag" style="--x:8%;--y:71%;--w:24cqw;--r:-7deg;--z:4">
+        feito com carinho♡
+      </div>
+
+      <div class="sb-i sb-blue" style="--x:36%;--y:75%;--w:30cqw;--r:3deg;--z:3">
+        <span>colecionando</span><strong>FELIZES</strong><span>little moments</span>
+        <div class="sb-stamp" style="--r:-12deg">approved ✿</div>
+      </div>
+
+      <figure class="sb-i sb-pol tp" style="--x:68%;--y:72%;--w:25cqw;--r:-5deg;--z:4;--ar:1/1;--tape:rgba(193,154,101,.55)">
+        <img src="assets/photos/dudinha-polaroid.jpg" alt="" style="--op:center 20%">
+        <small>abraços</small>
+      </figure>
+
+      <div class="sb-i sb-washi" style="--x:80%;--y:4%;--w:18cqw;--r:40deg;--z:5">&nbsp;</div>
+      <div class="sb-i sb-washi" style="--x:3%;--y:50%;--w:20cqw;--r:-30deg;--z:5;--tape:rgba(222,174,183,.7)">&nbsp;</div>
+
+      <span class="sb-i sb-h" style="--x:40%;--y:33%;--r:-6deg;--c:#b17d91">forever &amp; always</span>
+      <span class="sb-i sb-h" style="--x:58%;--y:94%;--r:-3deg;--c:#718da2">😘😘😘</span>
+      <span class="sb-i sb-h" style="--x:84%;--y:60%;--r:90deg;--c:#b77e91;--fs:28px">〰</span>
+
+      <span class="sb-i sb-st" style="--x:42%;--y:7%;--c:#c19a65">★</span>
+      <span class="sb-i sb-st" style="--x:52%;--y:34%;--c:#b77e91">✿</span>
+      <span class="sb-i sb-st" style="--x:90%;--y:41%;--c:#c17d8b">♡</span>
+      <span class="sb-i sb-st" style="--x:33%;--y:68%;--c:#c19a65">✦</span>
+      <span class="sb-i sb-st" style="--x:63%;--y:70%;--c:#9bb5c5">✧</span>
+
+      <footer class="sb-foot">
+        <span>♡ TO BE CONTINUED…</span><span>✦</span>
+      </footer>
+    </div>
+
+  </div>
+
+  <button class="back-button backToTracklist">
+    ← BACK TO TRACKLIST
+  </button>
+
+</section>
+
+
+ <!-- PÁGINA 2 - THE LIFE OF A SHOWGIRL · CAPÍTULO SWIFTIE -->
+<section class="album-page ts-page hidden" id="page2">
+
+    <!-- abertura de show (acontece só no começo) -->
+    <div class="ts-curtain ts-curtain-l" aria-hidden="true"></div>
+    <div class="ts-curtain ts-curtain-r" aria-hidden="true"></div>
+    <span class="ts-beam ts-beam-l" aria-hidden="true"></span>
+    <span class="ts-beam ts-beam-r" aria-hidden="true"></span>
+
+    <div class="ts-wrap">
+
+        <span class="ts-spark" style="--x:4%;--y:2%;--d:3s">✦</span>
+        <span class="ts-spark" style="--x:93%;--y:4%;--d:2.4s;--s:24px;--c:#7fe0dc">✧</span>
+        <span class="ts-spark" style="--x:3%;--y:40%;--d:3.6s;--c:#ff9a4a">✦</span>
+        <span class="ts-spark" style="--x:95%;--y:55%;--d:2.8s;--s:16px">✦</span>
+        <span class="ts-spark" style="--x:6%;--y:78%;--d:3.2s;--s:22px;--c:#7fe0dc">✧</span>
+        <span class="ts-spark" style="--x:92%;--y:90%;--d:4s;--c:#ff9a4a">✦</span>
+
+        <header class="ts-top">
+            <p class="page-number">CHAPTER 01 · SIDE A</p>
+            <p class="ts-live">● NOW SHOWING</p>
+        </header>
+
+        <!-- TÍTULO -->
+        <div class="ts-hero">
+            <p class="ts-over">THE LIFE OF A</p>
+            <h2>Showgirl</h2>
+            <p class="page-subtitle">A little sparkle, a lot of personality.</p>
+            <p class="ts-tag">♡ A SWIFTIE CHAPTER · FOR DUDA ♡</p>
+        </div>
+
+        <div class="ts-grid">
+
+            <!-- ESCOLHA SUA ERA (montado pelo JS) -->
+            <div class="ts-eras">
+                <p class="ts-label ts-label-light">CHOOSE YOUR ERA ✦ toque em uma</p>
+                <div class="ts-chips" id="eraChips"></div>
+                <div class="ts-era-card" id="eraCard" aria-live="polite"></div>
+            </div>
+
+            <!-- FOTO 1: Duda no clima de show -->
+            <figure class="ts-photo ts-concert" style="--r:-3deg;--ar:4/5">
+                <div class="ph" data-hint="📸 foto da Duda em um show, cantando, dançando ou com roupa brilhosa">
+                    <img src="assets/photos/foto duda show.jpeg" alt="Duda no clima de show" onerror="this.remove()">
+                </div>
+                <figcaption>main character energy</figcaption>
+            </figure>
+
+            <!-- SWIFTIE ID -->
+            <div class="ts-card ts-id">
+                <header><span>SWIFTIE ID</span><span>ALL ERAS ACCESS</span></header>
+                <dl>
+                    <dt>NAME</dt>
+                    <dd>Duda ✦</dd>
+
+                    <dt>STATUS</dt>
+                    <dd>Swiftie, de coração ♡</dd>
+
+                    <dt>FAV ERA</dt>
+                    <dd><span class="ts-fill">(escreva aqui)</span></dd>
+
+                    <dt>FAV ALBUM</dt>
+                    <dd><span class="ts-fill">(escreva aqui)</span></dd>
+
+                    <dt>FAV SONG</dt>
+                    <dd><span class="ts-fill">(escreva aqui)</span></dd>
+
+                    <dt>LUCKY #</dt>
+                    <dd>
+                        <details class="ts-egg">
+                            <summary>13</summary>
+                            <p>Segredinho🤭🤭 teamo ✦</p>
+                        </details>
+                    </dd>
+                </dl>
+            </div>
+
+            <!-- PULSEIRAS DA AMIZADE -->
+            <div class="ts-card ts-brace">
+                <p class="ts-label">FRIENDSHIP BRACELETS</p>
+                <div class="ts-beads">
+                    <span>D</span><span>U</span><span>D</span><span>I</span><span>N</span><span>H</span><span>A</span>
+                </div>
+                <div class="ts-beads">
+                    <span>S</span><span>W</span><span>I</span><span>F</span><span>T</span><span>I</span><span>E</span>
+                </div>
+                <small>friendship bracelets, anyone? ♡</small>
+            </div>
+
+            <!-- FOTO 2: pulseiras -->
+            <figure class="ts-photo ts-bracephoto" style="--r:3deg;--ar:1/1">
+                <div class="ph" data-hint="📸 foto das mãos com pulseirinhas de amizade (ou a pulseira que vocês trocaram)">
+                    <img src="assets/photos/pulseira.jpeg" alt="Pulseiras de amizade" onerror="this.remove()">
+                </div>
+                <figcaption>stack them up ✦</figcaption>
+            </figure>
+
+            <!-- FOTO 3: álbum / música favorita -->
+            <figure class="ts-photo ts-albumphoto" style="--r:-2deg;--ar:1/1">
+                <div class="ph" data-hint="📸 foto dela com um disco, CD, pôster, fone de ouvido ou o cantinho de música">
+                    <img src="assets/photos/discos taylor.jpeg" alt="Duda com seu álbum favorito" onerror="this.remove()">
+                </div>
+                <figcaption>on repeat</figcaption>
+            </figure>
+
+            <!-- LETRA FAVORITA -->
+            <div class="ts-card ts-lyric">
+                <p class="ts-label">FAVORITE LYRIC</p>
+                <blockquote>
+                    Loving him was red
+Touching him was like realizing all you ever wanted
+Was right there in front of you ♡
+                </blockquote>
+                <small>— a trilha sonora dos seus dias</small>
+            </div>
+
+            <!-- FOTO 4: vocês duas -->
+            <figure class="ts-photo ts-duo" style="--r:2deg;--ar:1/1">
+                <div class="ph" data-hint="📸 foto de nos juntos">
+                    <img src="assets/photos/taylor roupapreta.jpg" alt="Nós duas" onerror="this.remove()">
+                </div>
+                <figcaption>Swiftie and taylor</figcaption>
+            </figure>
+
+            <!-- MENSAGEM -->
+            <div class="ts-card ts-note">
+                <span>✦ The Life of a Showgirl</span>
+                <p>
+                    Um capítulo dedicado à vc,
+                    aos seus gostos e a sua cantora fav.
+                </p>
+            </div>
+
+        </div>
+
+        <button class="back-button backToTracklist">
+            ← BACK TO TRACKLIST
+        </button>
+
+        <footer class="ts-foot">
+            <span>✦ THE SHOW MUST GO ON</span>
+            <span>01 / 04</span>
+        </footer>
+
+    </div>
+</section>
+
+
+        <!-- PÁGINA 3 - A LITTLE BIT OF MAGIC -->
+<section class="album-page mg-page hidden" id="page3">
+
+    <!-- Lumos: a luz que abre a página -->
+    <div class="mg-lumos" aria-hidden="true"></div>
+
+    <div class="mg-wrap">
+
+        <!-- velas flutuantes -->
+        <i class="mg-candle" style="--x:5%;--y:70px;--d:5s;--ld:1.4s"></i>
+        <i class="mg-candle" style="--x:15%;--y:110px;--d:6s;--ld:1.7s"></i>
+        <i class="mg-candle" style="--x:25%;--y:62px;--d:4.6s;--ld:2.0s"></i>
+        <i class="mg-candle" style="--x:75%;--y:66px;--d:5.4s;--ld:2.2s"></i>
+        <i class="mg-candle" style="--x:85%;--y:112px;--d:6.2s;--ld:1.9s"></i>
+        <i class="mg-candle" style="--x:94%;--y:72px;--d:4.8s;--ld:1.6s"></i>
+
+        <header class="mg-top">
+            <p class="page-number">CHAPTER 03 · SIDE B</p>
+            <p class="mg-date">19 NOVEMBER ✦</p>
+        </header>
+
+        <!-- TÍTULO -->
+        <div class="mg-hero">
+            <p class="mg-over">✦ A JORNADA MAGICA✦</p>
+            <h2>A Little Bit of Magic</h2>
+            <p class="page-subtitle">Magias e Travessuras.</p>
+            <p class="mg-tag" id="magicTag">UMA CARTA CHEGOU PARA VOCÊ</p>
+        </div>
+
+        <div class="mg-grid">
+
+            <!-- PARADA 1: BILHETE -->
+            <div class="mg-card mg-ticket">
+                <header><span>HOGWARTS EXPRESS</span><span>MÃO ÚNICA</span></header>
+                <div class="mg-ticket-body">
+                    <dl>
+                        <dt>PASSENGER</dt><dd>Duda ✦</dd>
+                        <dt>FROM</dt><dd>jaragua do sul</dd>
+                        <dt>TO</dt><dd>hogwarts</dd>
+                        <dt>DATE</dt><dd>19 de novembro</dd>
+                        <dt>TIME</dt><dd>11:00 em ponto</dd>
+                    </dl>
+                    <div class="mg-nine">9¾<small>PLATFORM</small></div>
+                </div>
+                <div class="mg-barcode"></div>
+            </div>
+
+            <!-- FOTO 1 -->
+            <figure class="mg-photo mg-p1" style="--r:3deg;--ar:4/5">
+                <div class="ph" data-hint="📸 foto da Duda viajando: com mala, numa estação, aeroporto ou trem">
+                    <img src="assets/photos/mala.jpg" alt="Duda a caminho da aventura" onerror="this.remove()">
+                </div>
+                <figcaption>todos a bordo ✦</figcaption>
+            </figure>
+
+            <!-- FOTO 2 -->
+            <figure class="mg-photo mg-p2" style="--r:-3deg;--ar:1/1">
+                <div class="ph" data-hint="📸 foto com clima mágico: cachecol, capa, varinha, castelo, biblioteca ou luzinhas">
+                    <img src="assets/photos/cachecol.jpg" alt="Duda em um clima mágico" onerror="this.remove()">
+                </div>
+                <figcaption>a little bit of magic</figcaption>
+            </figure>
+
+            <!-- PARADA 2: CARTA -->
+            <details class="mg-letter">
+                <summary>
+                    <span class="mg-env-to">Para: Duda<small>entregue por coruja, 19 de novembro</small></span>
+                    <span class="mg-seal">D</span>
+                    <em>toque no selo ✦</em>
+                </summary>
+                <div class="mg-paper">
+                    <h3>Cara Dudinha,</h3>
+                    <p>
+                        Temos o enorme prazer de informar que você foi aceita
+                        para mais um ano de vida, com início em 19 de novembro.
+                    </p>
+                    <p>
+                        Lista de materiais: um sorriso grande,
+                        boas histórias e muitos abraços.
+                    </p>
+                    <p>Aguardamos sua coruja de resposta até a meia-noite.</p>
+                    <span class="mg-sign">com carinho ♡</span>
+                </div>
+            </details>
+
+            <!-- PARADA 3: SELEÇÃO -->
+            <div class="mg-sort">
+                <p class="mg-label mg-label-light">A CERIMÔNIA DE SELEÇÃO ✦ onde a Duda ficaria?</p>
+                <div class="mg-chips" id="casaChips"></div>
+                <button class="mg-hat-btn" id="hatBtn">✦ DEIXAR O CHAPÉU DECIDIR</button>
+                <div class="mg-house-card" id="casaCard" aria-live="polite"></div>
+                <p class="mg-hat-msg" id="hatMsg" hidden></p>
+            </div>
+
+            <!-- PARADA 4: BOLO -->
+            <div class="mg-card mg-cake-card">
+                <div class="mg-cake">
+                    <button class="mg-wick" style="--x:-40px" aria-label="Soprar a vela"></button>
+                    <button class="mg-wick" style="--x:0px" aria-label="Soprar a vela"></button>
+                    <button class="mg-wick" style="--x:40px" aria-label="Soprar a vela"></button>
+                    <div class="mg-plate"></div>
+                </div>
+                <p class="mg-wish-hint">faça um pedido ✦ toque nas velas</p>
+                <p class="mg-wish" id="desejo" hidden>✦ Desejo enviado! Feliz aniversário, Dudinha ✧</p>
+            </div>
+
+            <!-- PARADA 5: FEITIÇOS -->
+            <div class="mg-card mg-book">
+                <p class="mg-label mg-label-gold">LIVRO DE FEITIÇOS DE ANIVERSÁRIO ✦ 3 feitiços para o seu dia</p>
+                <ol>
+                    <li><b>Felicitas Maxima</b><i>um dia inteiro de felicidade </i></li>
+                    <li><b>Torta Infinita</b><i> uma fatia extra de bolo</i></li>
+                    <li><b>Amicus Semper</b><i>um vinculo que não acaba nunca</i></li>
+                </ol>
+            </div>
+
+            <!-- MENSAGEM FINAL -->
+            <div class="mg-card mg-note">
+                <span>✦ Um capitulo magico</span>
+                <p>
+                    ter vc na minha vida torna ele mais mágica, obrigado.
+                </p>
+                <em>feliz aniversário, Duda ✦</em>
+            </div>
+
+            <!-- FOTO 3 -->
+            <figure class="mg-photo mg-p3" style="--r:2deg;--ar:1/1">
+                <div class="ph" data-hint="📸 foto de nos 2">
+                    <img src="assets/photos/TRIO.jpg" alt="Nós duas" onerror="this.remove()">
+                </div>
+                <figcaption>cúmplices em travessuras</figcaption>
+            </figure>
+
+        </div>
+
+        <button class="back-button backToTracklist">
+            ← BACK TO TRACKLIST
+        </button>
+
+        <footer class="mg-foot">
+            <span>✦ MISCHIEF MANAGED</span>
+            <span>03 / 04</span>
+        </footer>
+
+    </div>
+</section>
+
+       <!-- PÁGINA 4 - THE OTHER SIDE OF THE DOOR -->
+<section class="album-page cb-page hidden" id="page4">
+
+    <!-- botões caindo -->
+    <i class="cb-btn cb-fall" style="--x:6%;--sz:20px;--c:#ff7a59;--d:16s;--dl:0s"></i>
+    <i class="cb-btn cb-fall" style="--x:18%;--sz:28px;--c:#3fb8af;--d:19s;--dl:-6s"></i>
+    <i class="cb-btn cb-fall" style="--x:32%;--sz:18px;--c:#f5b83d;--d:15s;--dl:-3s"></i>
+    <i class="cb-btn cb-fall" style="--x:55%;--sz:24px;--c:#f29bbd;--d:18s;--dl:-9s"></i>
+    <i class="cb-btn cb-fall" style="--x:70%;--sz:20px;--c:#8b6bd6;--d:17s;--dl:-1s"></i>
+    <i class="cb-btn cb-fall" style="--x:84%;--sz:30px;--c:#ff7a59;--d:21s;--dl:-12s"></i>
+    <i class="cb-btn cb-fall" style="--x:94%;--sz:18px;--c:#3fb8af;--d:14s;--dl:-5s"></i>
+
+    <div class="cb-wrap">
+
+        <header class="cb-top">
+            <p class="page-number">CHAPTER 04 · SIDE B</p>
+            <p>✂ HANDMADE ✂</p>
+        </header>
+
+        <!-- TÍTULO + BONECA -->
+        <div class="cb-hero">
+
+            <div class="cb-doll" id="doll">
+                <i class="cb-tail l"></i><i class="cb-tail r"></i>
+                <i class="cb-hair"></i>
+                <div class="cb-face">
+                    <span class="cb-btn cb-eye l" style="--c:#3b7de9"></span>
+                    <span class="cb-btn cb-eye r" style="--c:#3b7de9"></span>
+                    <i class="cb-cheek"></i><i class="cb-cheek r"></i>
+                    <i class="cb-mouth"></i>
+                    <i class="cb-fringe"></i>
+                </div>
+                <i class="cb-hat"></i><i class="cb-pom"></i>
+            </div>
+            <p class="cb-doll-cap">✂✂✂</p>
+
+            <h2>The Other Side of the Door</h2>
+            <p class="cb-tag">FEITO À MÃO PARA A DUDA</p>
+        </div>
+
+        <!-- DOIS MUNDOS -->
+        <div class="cb-worlds">
+            <div class="cb-world cb-real">
+                <small>NO MUNDO REAL</small>
+                <strong>Um dia comum</strong>
+                <p>Do lado de cá, é rotina: compromissos, relógio correndo e a semana de sempre.</p>
+            </div>
+            <span class="cb-btn cb-mid" style="--c:#f5b83d"></span>
+            <div class="cb-world cb-other">
+                <small>NO NOSSO MUNDO</small>
+                <strong>19 de novembro</strong>
+                <p>Do lado de lá, é aniversário da Duda, um dos dias mais especiais do ano.</p>
+            </div>
+        </div>
+
+        <!-- QUADRO DE FELTRO COM FOTOS -->
+        <div class="cb-board">
+            <figure class="cb-photo" style="--r:-3deg;--ar:4/5;--c:#ff7a59">
+                <div class="ph" data-hint="📸 foto divertida da Duda: careta, óculos escuros, olhando para o lado">
+                    <img src="assets/photos/coraline.jpg" alt="Duda em uma foto divertida" onerror="this.remove()">
+                </div>
+                <figcaption>os mundos</figcaption>
+            </figure>
+
+            <figure class="cb-photo" style="--r:2deg;--ar:4/5;--c:#f5b83d">
+                <div class="ph" data-hint="📸 foto aconchegante: casaco amarelo, dia de chuva, clima de outono">
+                    <img src="assets/photos/portal.jpg" alt="Duda em um clima aconchegante" onerror="this.remove()">
+                </div>
+            </figure>
+
+            <figure class="cb-photo" style="--r:-2deg;--ar:4/5;--c:#f29bbd">
+                <div class="ph" data-hint="📸 foto dela perto de uma porta, escada, janela ou corredor com cara de segredo">
+                    <img src="assets/photos/dudinha-polaroid.jpg" alt="Duda perto de uma porta" onerror="this.remove()">
+                </div>
+                <figcaption>se colidem</figcaption>
+            </figure>
+        </div>
+
+        <!-- JARDIM DE FELTRO -->
+        <div class="cb-garden" aria-hidden="true">
+            <div class="cb-fl" style="--h:70px;--d:4.6s"><span class="cb-bloom" style="--c:#f29bbd"><i class="cb-btn" style="--s:16px;--c:#f5b83d"></i></span><i></i></div>
+            <div class="cb-fl" style="--h:104px;--d:5.4s"><span class="cb-bloom" style="--c:#8b6bd6"><i class="cb-btn" style="--s:16px;--c:#ffd27a"></i></span><i></i></div>
+            <div class="cb-fl" style="--h:62px;--d:4.2s"><span class="cb-bloom" style="--c:#ff7a59"><i class="cb-btn" style="--s:16px;--c:#3fb8af"></i></span><i></i></div>
+            <div class="cb-fl" style="--h:94px;--d:5s"><span class="cb-bloom" style="--c:#3fb8af"><i class="cb-btn" style="--s:16px;--c:#f29bbd"></i></span><i></i></div>
+            <div class="cb-fl" style="--h:76px;--d:4.8s"><span class="cb-bloom" style="--c:#f5b83d"><i class="cb-btn" style="--s:16px;--c:#ff7a59"></i></span><i></i></div>
+        </div>
+
+        <!-- MENSAGEM -->
+        <div class="cb-note">
+            <span>A little message ♡</span>
+            <p>
+                "Nem toda porta leva a um outro mundo. Algumas nos levam a pessoas que tornam o nosso mundo mais bonito."
+            </p>
+        </div>
+
+        <!-- A PEQUENA PORTA -->
+        <div class="cb-wall">
+            <p class="cb-wall-note">tem uma portinha escondida no papel de parede…</p>
+            <div class="cb-door-wrap">
+                <button class="cb-door" id="secretDoor" aria-label="Abrir a pequena porta">
+                    <span class="cb-glow"></span>
+                    <span class="cb-leaf"><i class="cb-knob"></i></span>
+                </button>
+            </div>
+        </div>
+        <p class="cb-door-hint">pequena porta · toque para abrir ✦</p>
+
+        <button class="back-button backToTracklist">
+            ← BACK TO TRACKLIST
+        </button>
+
+        <footer class="cb-foot">
+            <span>✂ SEWN WITH LOVE</span>
+            <span>04 / 04</span>
+        </footer>
+
+    </div>
+</section>
+
+<!-- PÁGINA 5 (SECRETA) - O JARDIM -->
+<section class="album-page cg-page hidden" id="page5">
+
+    <div class="cg-light" aria-hidden="true"></div>
+
+    <!-- pétalas caindo -->
+    <i class="cg-petal" style="--x:8%;--d:13s;--dl:0s;--c:#f7c6d4"></i>
+    <i class="cg-petal" style="--x:22%;--d:16s;--dl:-5s;--c:#fff"></i>
+    <i class="cg-petal" style="--x:38%;--d:12s;--dl:-2s;--c:#f9d98a"></i>
+    <i class="cg-petal" style="--x:52%;--d:17s;--dl:-8s;--c:#f7c6d4"></i>
+    <i class="cg-petal" style="--x:66%;--d:14s;--dl:-4s;--c:#fff"></i>
+    <i class="cg-petal" style="--x:80%;--d:15s;--dl:-10s;--c:#f48fb1"></i>
+    <i class="cg-petal" style="--x:92%;--d:12s;--dl:-6s;--c:#f9d98a"></i>
+
+    <div class="cg-wrap">
+
+        <header class="cg-top">
+            <p class="page-number">SECRET CHAPTER · BEHIND THE DOOR</p>
+            <p>19 NOVEMBER ✿</p>
+        </header>
+
+        <!-- TÍTULO -->
+        <div class="cg-hero">
+            <svg class="cg-side l"><use href="#sunflower" width="100%" height="100%"/></svg>
+            <svg class="cg-side r"><use href="#sunflower" width="100%" height="100%"/></svg>
+
+            <p class="cg-over">✿ ONLY FOR YOU ✿</p>
+            <h2>O jardim secreto</h2>
+            <p class="page-subtitle">Algumas histórias guardam a melhor página para o final.</p>
+        </div>
+
+        <!-- VARAL DE FOTOS -->
+        <div class="cg-line">
+            <figure class="cg-photo" style="--r:-2deg">
+                <div class="ph" data-hint="📸 a Duda rindo de verdade, uma foto natural">
+                    <img src="assets/photos/duda oculos vermelha.jpeg" alt="Duda sorrindo" onerror="this.remove()">
+                </div>
+                <figcaption>A mais ✿</figcaption>
+            </figure>
+            <figure class="cg-photo" style="--r:2deg">
+                <div class="ph" data-hint="📸 foto de vocês duas juntas">
+                    <img src="assets/photos/dudamao.jpeg" alt="Nós duas" onerror="this.remove()">
+                </div>
+                <figcaption>legal</figcaption>
+            </figure>
+            <figure class="cg-photo" style="--r:-1.5deg">
+                <div class="ph" data-hint="📸 um momento especial: viagem, festa ou aniversário passado">
+                    <img src="assets/photos/dudinha-capa.jpg" alt="Um momento especial" onerror="this.remove()">
+                </div>
+                <figcaption>do</figcaption>
+            </figure>
+            <figure class="cg-photo" style="--r:2.5deg">
+                <div class="ph" data-hint="📸 foto de grupo de amigos ou uma foto antiga (throwback)">
+                    <img src="assets/photos/dudinha-polaroid.jpg" alt="Memórias" onerror="this.remove()">
+                </div>
+                <figcaption>mundo♡</figcaption>
+            </figure>
+        </div>
+
+        <!-- A CARTA -->
+        <article class="cg-letter">
+            <svg class="cg-corner c1"><use href="#daisy" width="100%" height="100%"/></svg>
+            <svg class="cg-corner c2"><use href="#sunflower" width="100%" height="100%"/></svg>
+            <svg class="cg-corner c3"><use href="#daisy" width="100%" height="100%"/></svg>
+
+            <h3>Para a Duda,</h3>
+
+            <div class="cg-text">
+                <!-- ✍️ ESCREVA SUA CARTA AQUI ✍️
+                     Cada <p> é um parágrafo. Pode ter quantos quiser.
+                     Quando colocar o texto de verdade, apague a classe "cg-ph". -->
+
+                <p> As pessoas mais especiais normalmente entram na nossa vida de um jeito mais despretenciosamente, e do nada se tornam fundamentais, foi assim com vc, é meio doido como a gnt se conheceu do nada, e de uma hora para outra, criamos essa amizade muito dahora, que significa muito para mim, hoje em dia meus dias não são completos se vc nao estiver nele, eu agradeço muito por tem uma pessoa tão incrivel como vc para compartilhar a vida cmg, muito obrigado por fazer parte da minha vida maria. </p>
+                <p>Pretendo apreciar cada dia, cada hora, cada minuto, cada segundo que por perto(literalmente por perto, fisicamente) de vc, infelizmente não é todo dia que eu consiga vir para cá, mas cada momento ao seu lado se torna especial, e esses momentos eu guardo e guardarei para sempre em lugarzinho bem especial aqui dentro de mim.</p>
+                <p> Desejo tudo de bom para vc, que esse dia de seja muito especial, e todos os outros tbm, vc é uma pessoa maravilhosa, obrigado por ser qm vc é, saiba que sempre que precisar de mim, para qualquer coisa que seja, eu estarei sempre aqui, Eu te amo, bobona❤️</p>
+
+                <!-- ✍️ FIM DA CARTA ✍️ -->
+            </div>
+
+            <p class="cg-sign">com muito carinho,<br><span>Luis</span></p>
+        </article>
+
+        <p class="cg-end">Feliz aniversário, Duda ✿</p>
+
+        <!-- JARDIM -->
+        <div class="cg-garden" aria-hidden="true">
+            <div class="cg-fl" style="--h:70px;--d:4.5s;--g:.3s"><svg class="d"><use href="#daisy" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:96px;--d:5.2s;--g:.5s"><svg class="t" style="color:#f48fb1"><use href="#tulip" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:118px;--d:5.8s;--g:.7s"><svg class="s"><use href="#sunflower" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:64px;--d:4.2s;--g:.9s"><svg class="d"><use href="#daisy" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:90px;--d:5s;--g:1.1s"><svg class="t" style="color:#ff8a6b"><use href="#tulip" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:76px;--d:4.8s;--g:1.3s"><svg class="d"><use href="#daisy" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:112px;--d:5.6s;--g:1.5s"><svg class="s"><use href="#sunflower" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:84px;--d:4.4s;--g:1.7s"><svg class="t" style="color:#e86a92"><use href="#tulip" width="100%" height="100%"/></svg><i></i></div>
+            <div class="cg-fl" style="--h:66px;--d:5.1s;--g:1.9s"><svg class="d"><use href="#daisy" width="100%" height="100%"/></svg><i></i></div>
+        </div>
+        <div class="cg-grass" aria-hidden="true"></div>
+
+        <button class="back-button backToTracklist">
+            ← BACK TO TRACKLIST
+        </button>
+
+        <footer class="cg-foot">
+            <span>✿ THE END.</span>
+            <span>✿</span>
+        </footer>
+
+    </div>
+</section>
+
+    </main>
+<!-- MÚSICA -->
+<audio id="trilha" loop preload="auto"></audio>
+
+<button class="mu-btn" id="musicBtn" data-estado="off" aria-label="Ligar ou desligar a música">
+    <span class="mu-bars"><b></b><b></b><b></b></span>
+    <span class="mu-txt">ligar música</span>
+</button>
+
+<div class="mu-toast" id="musicToast" aria-live="polite"></div>
+</body>
+
+</html>
